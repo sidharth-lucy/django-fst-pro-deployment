@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load my_extra %}
+
+
+{% block body_block %}
+    <h1>This is the home page</h1>
+    <h1>welcome to index</h1>
+    {{ wish }}<br>
+    {{ number }}<br>
+
+    <!-- TO USE TEMPLATES FILTER  -->
+    {{ wish|upper }}<br>
+    {{ number|add:99}}<br>
+
+  <!-- USSING OUR OWN 'cut' FILTER   -->
+   {{ wish|cut_strg:'Hello'}}
+
+{% endblock %}

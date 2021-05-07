@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>welcome to relative_url_templates</h1>
+
+      <!-- NOTE: THERE SHOULD NOT BE ANY SPACE BETWEEN "'" AND THE names. Ex- 'basic_app:other' -->
+    <a href="{% url 'basic_app:other' %}">link for other page</a><br>
+    <a href="{% url 'admin:index'%}">Link for admin page</a><br>
+    <a href="{%url 'index'%}">LInk for index page</a>
+
+  </body>
+</html>
